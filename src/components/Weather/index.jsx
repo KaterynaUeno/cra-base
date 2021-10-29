@@ -31,8 +31,6 @@ class Weather extends Component {
         icon: resp.data.weather[0].icon,
       })
     })
-    //  const elems = document.querySelectorAll('.modal');
-    //  window.M.Modal.init(elems);
   }
 
 render(){
@@ -41,18 +39,6 @@ render(){
     <div className="App">
       <h1>Weather today</h1>
       <p>{this.state.temp} °C</p>
-        {/* <a className="waves-effect waves-light btn modal-trigger" href="#modal1">Details</a> */}
-  {/* <div id="modal1" className="modal">
-    <div className="modal-content">
-      <h4>{this.state.city}</h4>
-      <p>High: {this.state.high}</p>
-      <p>Low: {this.state.low}</p>
-      <p>{this.state.weather} <img src={iconUrl} alt="weather" /></p>
-    </div>
-    <div className="modal-footer">
-      <a href="#!" className="modal-close waves-effect waves-green btn-flat">OK</a>
-    </div>
-  </div> */}
   <WeatherDetails
     open={this.state.open}
     onClose={() => this.setState({ open:false })}
