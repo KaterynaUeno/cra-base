@@ -5,14 +5,13 @@ import Homepage from "./views/Homepage";
 import About from "./views/About";
 import Navigation from "./components/Navigation";
 import Billing from "./views/Account/Billing";
-import Weather from "./components/Weather";
+// import Weather from "./components/Weather";
 
 const App = () => {
   return (
     <Router>
       <div>
         <Navigation />
-
         <hr />
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
@@ -22,7 +21,6 @@ const App = () => {
           <Route path="/account/billing" component={Billing} />
           <Route path="/" exact component={Homepage} />
         </Switch>
-        <Weather />
       </div>
     </Router>
   );
