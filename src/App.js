@@ -5,7 +5,7 @@ import Homepage from "./views/Homepage";
 import About from "./views/About";
 import Navigation from "./components/Navigation";
 import Billing from "./views/Account/Billing";
-import Weather from "./components/Weather";
+// import Weather from "./components/Weather";
 
 const App = () => {
   return (
@@ -22,7 +22,6 @@ const App = () => {
           <Route path="/account/billing" component={Billing} />
           <Route path="/" exact component={Homepage} />
         </Switch>
-        <Weather />
       </div>
     </Router>
   );
