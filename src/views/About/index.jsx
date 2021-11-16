@@ -1,10 +1,14 @@
 import React from 'react';
-import UserForm from '../../components/Form/UserFrorm';
+import AlertDialog from '../../components/AlertDialog/AlertDialog';
+
 
 const About = () => {
 
-	return <div>
-    <UserForm/>
+	return <div className="container" style={{display:"flex",
+  justifyContent:"center",
+  alignItems:"center",
+  marginTop:"80px"}}>
+    <AlertDialog/>
   </div>;
 }
 
