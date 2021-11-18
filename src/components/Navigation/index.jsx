@@ -4,6 +4,7 @@ import { Menu } from "@mui/icons-material";
 import styles from './styles';
 import { useTheme } from '@mui/material/styles';
 import { NavLink as RouterLink } from 'react-router-dom';
+import HomeIcon from '@mui/icons-material/Home';
 
 const Navigation = () => {
 	const theme = useTheme();
@@ -19,6 +20,9 @@ const Navigation = () => {
 						aria-label="menu"
 						sx={{ mr: 2 }}
 					>
+             <HomeIcon style={{
+                color: "pink",
+                fontSize: "30px"}}/>
 						<Menu/>
 					</IconButton>
 					<Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
